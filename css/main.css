@@ -5,7 +5,7 @@
 body {
   margin: 0;
   font-family: sans-serif;
-  padding-top: 50px;
+
 
 }
 
@@ -14,7 +14,6 @@ nav {
   margin: 0;
   height: 100px;
   border-bottom: 5px solid #DC7B32;
-  position: fixed;
   padding: 0;
   width: 100%;
   top: 0;
@@ -28,9 +27,16 @@ nav li > a:focus {
 .sitenav img {
   height: 65px;
   width: 65px;
-  position: relative;
   float: left;
 
+}
+
+.sitenav ul {
+  margin-right: 85px;
+}
+
+.sitenav .bold {
+  font-weight: bold;
 }
 
 .sitenav > a {
@@ -41,10 +47,16 @@ nav li > a:focus {
   font-weight: lighter;
   top: 20px;
   height: 5px;
+
+}
+
+.sitenav li:first-child {
+  margin-right: 230px;
 }
 
 
-.bold {
+
+li .bold {
   font-weight: bold;
   font-size: 35px;
 
@@ -75,95 +87,109 @@ nav li > a:focus {
   color: #ffffff;
 }
 
+
+
 header {
- width: 90%;
- margin: 0 auto;
- height: 500px;
- color: #FE7E00;
- padding-top: 20px;
- text-align: center;
-}
-
-.placeholder {
   float: right;
-  margin-top: 25px;
+  margin-top: 5px;
+
 }
 
-.placeholder input {
+header input {
   float: right;
   border: none;
   background-color: #EFEFED;
   padding: 15px 45px;
-  margin-top: 20px;
-  margin-right: 50px;
+  margin-right: 113px;
   font-size: 15px;
   letter-spacing: 2px;
 
 }
 
+section {
+    display: inline-block;
+   color: #FE7E00;
+   padding-top: 20px;
+   margin-top: 33px;
+}
+
+section .bold {
+  font-weight: bold;
+}
+
 .fa {
   position: relative;
   font-size: 20px;
-  top: 36px;
+  top: 19px;
   left: 233px;
   color: #C2C2C2;
 }
 
-.image {
-  float: left;
-  margin-top: 100px;
-  margin-left: 60px;
-}
-
 
 .right {
-  margin-top: 125px;
-  text-align: center;
+  display: inline-block;
+  width: 600px;
+
 }
 
 
 
-.right p {
+section p {
   font-size: 40px;
   text-align: left;
   font-weight: 100;
   line-height: 50px;
+  display: inline;
+  float: left;
+  margin-top: 0;
+
 }
 
-.right button {
-  position: relative;
+section button {
+  display: inline-block;
   right: 40px;
-  padding: 20px 80px;
+  padding: 20px 60px;
   background-color: #FE7E00;
   font-size: 15px;
   border: none;
   color: #ffffff;
-  text-align: center;
   margin-right: 40px;
   cursor: pointer;
+  float: left;
 }
 
-
-.right button:hover {
+section button:hover {
   opacity: 0.5;
   cursor: pointer;
   outline: none;
 
 }
 
-.right button:active {
+section button:active {
   outline: none;
 }
 
-.right #blue {
+section #blue {
   background-color:#7ACCC8;
-  padding: 20px 60px;
+  padding: 20px 40px;
 }
 
-.right #blue:hover {
+section #blue:hover {
   opacity: 0.5;
   cursor: pointer;
   outline: none;
+
+}
+
+section .blue2 {
+  color: #7ACCC8;
+}
+
+.image {
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 60px;
+
 }
 
 header .blue2 {
@@ -174,4 +200,152 @@ footer {
   height: 75px;
   background-color: #7ACCC8;
   padding-bottom: 0;
+  margin-top: 80px;
+}
+
+@media (max-width: 1356px) {
+
+  section button {
+    padding: 20px 60px;
+
+  }
+
+  section #blue {
+    padding: 20px 40px;
+  }
+
+}
+
+@media (max-width:1191px) {
+  .sitenav:first-child {
+    position: absolute;
+  }
+
+
+@media (max-width: 1189px) {
+
+  .sitenav li {
+    padding: 23px 5px;
+  }
+
+  section button {
+    padding: 20px 40px;
+    margin-right: 20px;
+  }
+
+  section #blue {
+    padding: 20px 16px;
+    margin-right: 0;
+  }
+
+  .image {
+    margin-left: 0;
+  }
+
+}
+
+@media (max-width: 1000px) {
+  .sitenav {
+    float: none;
+    margin-top: 0;
+  }
+
+.sitenav > a {
+  margin-right:40px;
+}
+
+.sitenav {
+  padding-top: 17px;
+}
+
+.right {
+  width: 450px;
+}
+
+.right p {
+    margin-top: 0;
+
+}
+
+}
+
+@media (max-width:849px) {
+  .sitenav img {
+    height: 45px;
+    width: 45px;
+    float: left;
+
+  }
+  .sitenav > a {
+    font-size: 32px;
+}
+
+    .sitenav li {
+      padding: 25px 2px;
+  }
+
+  .sitenav {
+    font-size: 15px;
+  }
+
+    .right {
+      width: 323px;
+}
+    .image img {
+      width: 75%;
+}
+
+    .right p {
+      font-size: 30px;
+
+}
+
+    section #blue {
+        padding: 20px 6px;
+        font-size: 12px;
+}
+
+    section button {
+        padding: 20px 20px;
+        font-size: 12px;
+      }
+}
+
+
+
+@media (max-width:742px) {
+
+  .sitenav > a{
+
+    margin-right: 412px;
+
+  }
+
+  .sitenav li:nth-child(2) {
+    display: none;
+
+  }
+
+  .sitenav {
+    font-size: 14px;
+    margin-right: 50px;
+
+  }
+
+  .right {
+    margin-left: 36px;
+    margin-top: 0;
+  }
+
+
+  .image {
+    margin-top: 0;
+    margin-left: 36px;
+  }
+
+  header input {
+    position: absolute;
+    left: 21px;
+    top: 110px;
+  }
 }
